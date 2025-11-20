@@ -1,4 +1,4 @@
-const DEFAULT_COOKIE = "ndus=Y2YqaCTteHuiU3Ud_MYU7vHoVW4DNBi0MPmg_1tQ" // Fallback cookie
+const DEFAULT_COOKIE = "ndus=YqFJ43EteHuiHQONTMxZyD4uE7_xI0kS9x2t2eYd" // Fallback cookie
 
 function getHeaders(cookie) {
   return {
@@ -105,7 +105,7 @@ async function getFileInfo(link, event, cookie) {
       thumbnail: fileInfo.thumbs?.url3 || "",
       file_size: getSize(parseInt(fileInfo.size || 0)),
       size_bytes: parseInt(fileInfo.size || 0),
-      proxy_url: `https://terabox.ashlynn.workers.dev/proxy?url=${encodeURIComponent(fileInfo.dlink)}&file_name=${encodeURIComponent(fileInfo.server_filename || 'download')}&cookie=${encodeURIComponent(cookie)}`,
+      proxy_url: `https://dawn-voice-b2ce.com-am-ikra.workers.dev/proxy?url=${encodeURIComponent(fileInfo.dlink)}&file_name=${encodeURIComponent(fileInfo.server_filename || 'download')}&cookie=${encodeURIComponent(cookie)}`,
     };
   } catch (error) {
     console.error("Error in getFileInfo:", error.message);
